@@ -1,0 +1,30 @@
+{
+    "python.pythonPath": "C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe",
+    "sqltools.connections": [
+        {
+            "database": "chatbot",
+            "dialect": "MySQL",
+            "name": "conn",
+            "password": "Pritam",
+            "port": 3306,
+            "server": "localhost",
+            "username": "root"
+        }
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.testing.pytestArgs": [
+        "."
+    ],
+"python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "*test.py"
+    ],
+        "pytest.command": "/Users/cameron/.virtualenvs/demo-mLN-1lcH/bin/pytest"
+}
