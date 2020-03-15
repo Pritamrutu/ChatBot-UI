@@ -59,15 +59,15 @@ export class AuthenticationService {
     } else {
       return false;
     }
-  }
+  } 
 
   public register(user: TokenPayload): Observable<any> {
-    return this.http.post(`/chatbot/register`, user);
+    return this.http.post(`http://localhost:5000/chatbot/register`, user);
   }
 
   public login(user: TokenPayload): Observable<any> {
-    const base =  this.http.post(`/chatbot/login`, user);
-
+    const base =  this.http.post(`http://localhost:5000/chatbot/login`, user);
+    console.log("In Log")
     const request = base.pipe(
       map((data: TokenResponse) => {
         if (data.token) {

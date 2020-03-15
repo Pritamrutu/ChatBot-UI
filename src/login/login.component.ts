@@ -18,6 +18,8 @@ export class LoginComponent {
   constructor(private auth: AuthenticationService, private router: Router) {}
 
   login() {
+    console.log("In login Component");
+    
     this.auth.login(this.credentials).subscribe(
       () => {
         this.router.navigateByUrl('/register');
